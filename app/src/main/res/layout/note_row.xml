@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tiltle_txv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:padding="3dp" />
+
+            <TextView
+                android:id="@+id/description_txv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:padding="3dp"
+                android:layout_below="@+id/tiltle_txv"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
